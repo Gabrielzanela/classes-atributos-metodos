@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let fulanao = {
+        nome : 'fulano',
+        matricula : 3457,
+        aprovado : false,
+        }
+        console.table(fulanao);
+        
+        ////////
+
+       let heloisa = {
+        nome : 'o nome da pessoa é heloisa'
+       } 
+       console.log(heloisa);
+
+       ////////
+
+       let roberto = {
+        nome :'roberto',
+        idade : 24
+       }
+
+       let joana = {
+        nome : 'joana',
+        idade : 57
+       }
+
+    
+if(joana.idade > roberto.idade){
+    console.log('a pessoa mais velha é : joana');
+
+}  
+////////
+let mome1 = prompt("digite o nome do primeiro funcionario:");
+let salario1 = parseFloat(prompt("digite o salario do primeiro funcionario"));
+
+let nome2 = prompt("digite o nome do segundo funcionario");
+let salario2 = parseFloat(prompt("digite o salario do segundo funcionario"));
+
+let salarioMedio = (salario1 + salario2 ) / 2;
+console.log('O salario médio dos dois funcionários é R$' + salarioMedio.toFixed(2));
+
+////////
+class retangulo {
+    constructor(largura,altura){
+
+    this.largura = largura;
+    this.altura = altura;
+}
+
+
+
+
+calcularArea() {
+    return this.largura * this.altura;
+
+}
+
+calcularperimetro() {
+    return this.largura + this.altura;
+}
+
+calcularDiagonal() {
+    return math.sqrt(this.largura * this.largura + this.altura * thiss.altura);
+
+}
+}
+
+let largura = parseFloat(prompt("digite a largura dos retangulos:"));
+let altura = parseFloat(prompt("digite a altura dos retangulos:"));
+
+
+
+let area = retangulo.calcularArea();
+let perimetro = retangulo.calcularperimetro();
+let diagonal = retangulo.calcularDiagonal();
+
+console.log("Area:" + area.toFixed(2));
+console.log("perimetro:" + perimetro.tofixed(2));
+console.log("diagonal:" + perimetro.diagonal.toFixed(2));
+
+</script>
+</body>
+</html>
